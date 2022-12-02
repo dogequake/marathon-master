@@ -4,47 +4,67 @@
       xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:marathon.View.Pages"
-      mc:Ignorable="d" 
+      mc:Ignorable="d"
       d:DesignHeight="450" d:DesignWidth="800"
       Title="RegistrationPage">
 
-    <Grid>
+    <Grid Margin="0,-102,0,0">
         <Grid.ColumnDefinitions>
             <ColumnDefinition/>
             <ColumnDefinition/>
         </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
-            <RowDefinition Height="50*"/>
-            <RowDefinition Height="175*"/>
+            <RowDefinition Height="20*"/>
+            <RowDefinition Height="63*"/>
+            <RowDefinition Height="7*"/>
         </Grid.RowDefinitions>
-        <StackPanel Grid.Row="1" Grid.Column="0">
+        <StackPanel Grid.Row="1" Grid.Column="0" Grid.RowSpan="2">
             <UniformGrid>
                 <Label Foreground="#2E2E2E" Content="Email:" Margin="-109 0 0 0" Width="44"/>
                 <TextBox Foreground="#2E2E2E" Margin="-120 0 0 0" Text="email" Width="315"/>
             </UniformGrid>
             <UniformGrid>
-                <Label Foreground="#2E2E2E" Content="Пароль:" Margin="-109 0 0 0" Width="44"/>
-                <TextBox Foreground="#2E2E2E" Margin="-120 0 0 0" Text="enter your email address" Width="315"/>
+                <Label Foreground="#2E2E2E" Content="Пароль:" Margin="58,0,87,0"/>
+                <TextBox Foreground="#2E2E2E" Margin="-82,0,10,0" Text="enter your email address"/>
             </UniformGrid>
             <UniformGrid>
-                <Label Foreground="#2E2E2E" Content="Повторите пароль:" Margin="-109 0 0 0" Width="44"/>
-                <TextBox Foreground="#2E2E2E" Margin="-120 0 0 0" Text="enter your email address" Width="315"/>
+                <Label Foreground="#2E2E2E" Content="Повторите пароль:" Margin="0,0,42,0"/>
+                <TextBox Foreground="#2E2E2E" Margin="-82,0,10,0" Text="enter your email address"/>
             </UniformGrid>
             <UniformGrid>
-                <Label Foreground="#2E2E2E" Content="Имя: " Margin="-109 0 0 0" Width="44"/>
-                <TextBox Foreground="#2E2E2E" Margin="-120 0 0 0" Text="enter your email address" Width="315"/>
+                <Label Foreground="#2E2E2E" Content="Имя: " Margin="70,0,87,0"/>
+                <TextBox Foreground="#2E2E2E" Margin="-82,0,10,0" Text="enter your email address"/>
             </UniformGrid>
             <UniformGrid>
-                <Label Foreground="#2E2E2E" Content="Email:" Margin="-109 0 0 0" Width="44"/>
-                <TextBox Foreground="#2E2E2E" Margin="-120 0 0 0" Text="enter your email address" Width="315"/>
+                <Label Foreground="#2E2E2E" Content="Фамилия:" Margin="47,0,87,0"/>
+                <TextBox Foreground="#2E2E2E" Margin="-82,0,10,0" Text="enter your email address"/>
             </UniformGrid>
             <UniformGrid>
-                <Label Foreground="#2E2E2E" Content="Email:" Margin="-109 0 0 0" Width="44"/>
-                <TextBox Foreground="#2E2E2E" Margin="-120 0 0 0" Text="enter your email address" Width="315"/>
+                <Label Foreground="#2E2E2E" Content="Пол:" Margin="76,0,87,0"/>
+                <TextBox Foreground="#2E2E2E" Margin="-82,0,10,0" Text="enter your email address"/>
+            </UniformGrid>
+            <UniformGrid>
+                <Button Style="{StaticResource SmallButton}" Height="21" Margin="276,0,10,0">Регистрация</Button>
             </UniformGrid>
         </StackPanel>
-        <StackPanel Grid.Row="1" Grid.Column="1">
 
+        <StackPanel Grid.Row="1" Grid.Column="1" Grid.RowSpan="2">
+            <Image Source="/Assets/myphoto.jpg" Height="48" Margin="315,0,0,0"></Image>
+            <Label Margin="118,0,0,0" Height="26">Фото файл:</Label>
+            <UniformGrid>
+                <TextBox Foreground="#2E2E2E" Margin="120,0,-78,0" Text="enter your email address"/>
+                <Button Margin="115,0,0,0">Просмотр</Button>
+            </UniformGrid>
+            <UniformGrid>
+                <Label Margin="39,0,0,0">Дата рождения:</Label>
+                <TextBox Foreground="#2E2E2E" Margin="-60,0,42,0" Text="enter your email address"/>
+            </UniformGrid>
+            <UniformGrid>
+                <Label Margin="82,0,0,0">Страна:</Label>
+                <TextBox Foreground="#2E2E2E" Margin="-60,0,42,0" Text="enter your email address"/>
+            </UniformGrid>
+            <UniformGrid/>
+            <Button Style="{StaticResource ResourceKey=SmallButton}" Margin="10,56,282,0" Content="Отмена"/>
         </StackPanel>
     </Grid>
 </Page>

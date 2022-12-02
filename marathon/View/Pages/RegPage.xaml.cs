@@ -29,5 +29,10 @@ namespace marathon.View.Pages
         {
             this.NavigationService.Navigate(new LoginPage());
         }
+
+        private void RegistrationClick(object sender, RoutedEventArgs e)
+        {
+            this.NavigationService.Navigate(new RegistrationPage());
+        }
     }
 }

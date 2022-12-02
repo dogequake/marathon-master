@@ -21,7 +21,7 @@
                 <TextBox Foreground="#2E2E2E" Margin="-120 0 0 0" Width="315">enter your password</TextBox>
             </UniformGrid>
             <UniformGrid>
-                <Button HorizontalAlignment="Right" Style="{StaticResource SmallButton}" Foreground="#2E2E2E" Margin="5" FontSize="18" Width="85" >Login</Button>
+                <Button HorizontalAlignment="Right" Style="{StaticResource SmallButton}" Foreground="#2E2E2E" Margin="5" FontSize="18" Width="85">Login</Button>
                 <Button HorizontalAlignment="Left" Style="{StaticResource SmallButton}" Foreground="#2E2E2E" Margin="5" FontSize="18" Width="85">Cancel</Button>
             </UniformGrid>
         </StackPanel>

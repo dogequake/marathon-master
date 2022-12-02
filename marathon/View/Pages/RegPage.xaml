@@ -11,7 +11,7 @@
     <Grid>
         <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
             <Button x:Name="Login" Style="{StaticResource NavigationButton}" FontWeight="DemiBold" Foreground="#2E2E2E" Padding="20" Margin="5" FontSize="15" Click="LoginClick">Я учавствовал ранее</Button>
-            <Button Style="{StaticResource NavigationButton}" FontWeight="DemiBold" Foreground="#2E2E2E" Padding="20" Margin="5" FontSize="15">Я новый участник</Button>
+            <Button x:Name="Registration" Style="{StaticResource NavigationButton}" FontWeight="DemiBold" Foreground="#2E2E2E" Padding="20" Margin="5" FontSize="15" Click="RegistrationClick">Я новый участник</Button>
         </StackPanel>
     </Grid>
 </Page>
